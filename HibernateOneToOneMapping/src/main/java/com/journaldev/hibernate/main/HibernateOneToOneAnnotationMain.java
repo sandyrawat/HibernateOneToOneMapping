@@ -20,7 +20,7 @@ public class HibernateOneToOneAnnotationMain {
 		Session session = null;
 		Transaction tx = null;
 		try{
-		//Get Session
+		//Get Session object from the HibernateAnnotationUtil
 		sessionFactory = HibernateAnnotationUtil.getSessionFactory();
 		session = sessionFactory.getCurrentSession();
 		System.out.println("Session created using annotations configuration");
